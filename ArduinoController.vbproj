@@ -86,6 +86,7 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -100,6 +101,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RelayForm.Designer.vb">
+      <DependentUpon>RelayForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RelayForm.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="TempForm.Designer.vb">
       <DependentUpon>TempForm.vb</DependentUpon>
@@ -120,6 +127,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelayForm.resx">
+      <DependentUpon>RelayForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TempForm.resx">
       <DependentUpon>TempForm.vb</DependentUpon>

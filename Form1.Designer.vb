@@ -22,12 +22,15 @@ Partial Class Form1
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
         Me.SuspendLayout()
         '
         'Button1
@@ -81,8 +84,10 @@ Partial Class Form1
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(123, 58)
         Me.Button6.TabIndex = 4
-        Me.Button6.Text = "Temperatura"
         Me.Button6.UseVisualStyleBackColor = True
+        '
+        'BackgroundWorker1
+        '
         '
         'Form1
         '
@@ -108,4 +113,6 @@ Partial Class Form1
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents SerialPort1 As IO.Ports.SerialPort
 End Class

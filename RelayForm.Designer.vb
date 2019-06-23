@@ -71,6 +71,7 @@ Partial Class RelayForm
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "RelayForm"
         Me.Text = "RelayForm"
         Me.ResumeLayout(False)

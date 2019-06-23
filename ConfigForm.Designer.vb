@@ -40,6 +40,7 @@ Partial Class ConfigForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Button1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "ConfigForm"
         Me.Text = "ConfigForm"
         Me.ResumeLayout(False)

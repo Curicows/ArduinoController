@@ -31,6 +31,7 @@ Partial Class Form1
         Me.Button6 = New System.Windows.Forms.Button()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'Button1
@@ -84,6 +85,7 @@ Partial Class Form1
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(123, 58)
         Me.Button6.TabIndex = 4
+        Me.Button6.Text = "Lighting"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'BackgroundWorker1
@@ -93,7 +95,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(362, 450)
+        Me.ClientSize = New System.Drawing.Size(362, 335)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button3)
@@ -115,4 +117,5 @@ Partial Class Form1
     Friend WithEvents Button6 As Button
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents SerialPort1 As IO.Ports.SerialPort
+    Friend WithEvents Timer1 As Timer
 End Class
